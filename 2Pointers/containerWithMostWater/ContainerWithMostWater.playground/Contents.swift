@@ -5,10 +5,11 @@ func containerWithMostWater(_ heights: [Int]) -> Int {
     var left = 0
     var right = heights.count - 1
     while left <= right {
-        let currentArea = min(heights[left], heights[right]) * (right - left)
-        if maxArea < currentArea {
-            maxArea = currentArea
-        }
+        let h = min(heights[left], heights[right])
+        let width = right - left
+        let currentArea = width * h
+        
+        maxArea = max(maxArea, currentArea)
         
         if heights[left] < heights[right] {
             left += 1

@@ -68,29 +68,19 @@ Depending on the problem, pointers can:
 
 ## ✅ Problem Solved So Far
 
-### Move Zeroes to End of Array
+### 1. Move Zeroes to End of Array
 
 **Problem:**  
 Given an integer array, move all `0`s to the end while maintaining the relative order of non-zero elements.
 
----
+###  2. Container With Most Water  
 
-## 💡 Approach
+**Problem:**
+Given an integer array `height` of length `n`, where each element represents the height of a vertical line drawn at index `i`, find two lines that together with the x-axis form a container that holds the **maximum amount of water**.
 
-- Use **Slow & Fast pointers**
-- `fast` scans the array
-- `slow` tracks the position to place the next non-zero element
-- Swap elements when a non-zero is found
+Return the maximum amount of water a container can store.
 
 ---
-
-## ⏱ Time Complexity
-O(n)
-
----
-
-## 🧠 Space Complexity
-O(1)
 
 ---
 
