@@ -37,6 +37,7 @@ Problems Solved:
 
 1. **Move Zeroes**
 2. **Container With Most Water**
+3. **Sum of Pair Equal to Target**
 
 Key Concepts Learned:
 - Slow & Fast pointer technique
@@ -76,6 +77,21 @@ Key Concepts Learned:
 - Understanding area maximization logic
 
 ---
+
+### 3️⃣ Sum of Pair Equal to Target
+
+**Pattern:** Two Pointers (Opposite Direction)
+
+**Time Complexity:** O(n)  
+**Space Complexity:** O(1)
+
+💡 Learnings:
+- Leveraging sorted array property for optimization
+- Efficient pair searching without nested loops
+- Pointer contraction technique (left++, right--)
+- Eliminating brute force O(n²) approach
+- Understanding when and why to move each pointer
+- Building intuition for sum-based comparison problems
 
 ## ⏳ Upcoming Patterns
 
