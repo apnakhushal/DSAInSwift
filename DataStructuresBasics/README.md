@@ -1,6 +1,8 @@
 # 📚 Data Structures Basics Series  
 
-## Topic 01: Linked Lists
+## [Topic 01: Linked Lists](https://github.com/apnakhushal/swift-dsa-playbook/tree/main/DataStructuresBasics/LinkedList)
+
+## [Topic 02: Stacks](https://github.com/apnakhushal/swift-dsa-playbook/tree/main/DataStructuresBasics/Stack)
 
 Welcome to the **Data Structures Fundamentals Series** under  
 
