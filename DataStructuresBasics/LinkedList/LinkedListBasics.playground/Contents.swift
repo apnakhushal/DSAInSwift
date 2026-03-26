@@ -40,8 +40,37 @@ class LinkedList<T: Equatable> {
         }
         print(result + "nil")
     }
+    
+    // MARK: - Insert at Head
+    // Complexity: O(1) - Instant change at the front
+    func insertAtHead(value: T) {
+        let newNode = Node(value: value)
+        newNode.next = head
+        head = newNode
+    }
+    
+    // MARK: - Insert at End
+    // Complexity: O(n) - Must traverse to the last node
+    func insertAtEnd(value: T) {
+        let newNode = Node(value: value)
+        
+        // If list is empty, new node becomes the head
+        guard let headNode = head else {
+            head = newNode
+            return
+        }
+        
+        var current = headNode
+        // Iterate until we find the node where .next is nil
+        while let nextNode = current.next {
+            current = nextNode
+        }
+        
+        current.next = newNode
+    }
 
     // MARK: - Deletion
+    // Complexity: O(n) - In the worst case (the value is at the end or not there), you visit every node.
     func delete(value: T) {
         // Case 1: List is empty
         if head == nil { return }
@@ -76,6 +105,48 @@ list.append(value: 40)
 print("Initial List:")
 list.display() // Output: 10 -> 20 -> 30 -> 40 -> nil
 
-print("\nAfter deleting 20:")
 list.delete(value: 20)
+print("\nAfter deleting 20:")
 list.display() // Output: 10 -> 30 -> 40 -> nil
+
+
+extension LinkedList {
+    // MARK: - Reverse
+    // Complexity: O(n) - You must visit every single node exactly once to flip its pointer.
+    func reverse() {
+        var prev: Node<T>? = nil
+        var current = head
+        var next: Node<T>? = nil
+        
+        while current != nil {
+            next = current?.next     // Store the next node
+            current?.next = prev     // Reverse the pointer
+            prev = current           // Move prev forward
+            current = next           // Move current forward
+        }
+        
+        head = prev // Update head to the new front (the old tail)
+    }
+}
+
+list.reverse()
+print("\nAfter reversing:")
+list.display()
+
+extension LinkedList {
+    // MARK: - Find Middle
+    // Complexity: O(n) - Even with the Fast/Slow pointer trick, you still traverse the list once.
+    func findMiddle() -> T? {
+        var slow = head
+        var fast = head
+        
+        while fast != nil && fast?.next != nil {
+            slow = slow?.next
+            fast = fast?.next?.next
+        }
+        
+        return slow?.value
+    }
+}
+
+print("\nMiddle of the List -> \(list.findMiddle())") // Output: 30
