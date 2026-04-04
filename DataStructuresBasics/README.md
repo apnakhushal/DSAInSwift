@@ -1,8 +1,10 @@
 # 📚 Data Structures Basics Series  
 
-## [Topic 01: Linked Lists](https://github.com/apnakhushal/swift-dsa-playbook/tree/main/DataStructuresBasics/LinkedList)
+## [Topic 01: Linked List](https://github.com/apnakhushal/swift-dsa-playbook/tree/main/DataStructuresBasics/LinkedList)
 
-## [Topic 02: Stacks](https://github.com/apnakhushal/swift-dsa-playbook/tree/main/DataStructuresBasics/Stack)
+## [Topic 02: Stack](https://github.com/apnakhushal/swift-dsa-playbook/tree/main/DataStructuresBasics/Stack)
+
+## [Topic 03: Queue](https://github.com/apnakhushal/swift-dsa-playbook/tree/main/DataStructuresBasics/Queue)
 
 Welcome to the **Data Structures Fundamentals Series** under  
 
