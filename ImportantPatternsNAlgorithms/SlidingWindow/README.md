@@ -62,3 +62,31 @@ You should consider using the sliding window pattern when you are asked to:
 - Permutation in string  
 - Fruits into baskets (at most 2 types)  
 - Maximum average subarray of size k
+
+---
+
+# 🔥 Sliding Window Template
+
+```swift
+// Step 1: Build initial window
+
+// Step 2: Slide window
+// add next element
+// remove previous element
+
+// Step 3: Update result
+```
+
+---
+
+# 🧠 Interview Tips
+
+If you see:
+
+* "subarray of size k"
+* "substring of length k"
+* "contiguous elements"
+
+👉 Think **Fixed Sliding Window**
+
+---
